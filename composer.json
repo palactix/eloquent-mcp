@@ -1,0 +1,54 @@
+{
+  "name": "palactix/eloquent-mcp",
+  "description": "Auto-generate MCP tools from Eloquent models. Add one trait — get a full AI-accessible CRUD server.",
+  "keywords": [
+    "laravel",
+    "mcp",
+    "eloquent",
+    "ai",
+    "tools",
+    "model-context-protocol"
+  ],
+  "homepage": "https://github.com/palactix/eloquent-mcp",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Palactix",
+      "email": "hello@palactix.com",
+      "homepage": "https://palactix.com"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "laravel/mcp": "^0.7",
+    "illuminate/database": "^12.0|^13.0",
+    "illuminate/support": "^12.0|^13.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^9.0",
+    "pestphp/pest": "^3.0",
+    "pestphp/pest-plugin-laravel": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Palactix\\EloquentMcp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Palactix\\EloquentMcp\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Palactix\\EloquentMcp\\EloquentMcpServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
